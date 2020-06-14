@@ -118,3 +118,13 @@ C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\obj\Debug\net
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\obj\Debug\netcoreapp3.0\ServerApp.csproj.CopyComplete
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\obj\Debug\netcoreapp3.0\ServerApp.dll
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\obj\Debug\netcoreapp3.0\ServerApp.pdb
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
