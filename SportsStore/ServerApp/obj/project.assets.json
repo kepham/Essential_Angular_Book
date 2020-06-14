@@ -5124,11 +5124,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Learning\\AngularJs\\SportsStore\\ServerApp\\ServerApp.csproj",
+      "projectUniqueName": "C:\\Learning\\AngularJs\\Essential_Angular_Book\\SportsStore\\ServerApp\\ServerApp.csproj",
       "projectName": "ServerApp",
-      "projectPath": "C:\\Learning\\AngularJs\\SportsStore\\ServerApp\\ServerApp.csproj",
+      "projectPath": "C:\\Learning\\AngularJs\\Essential_Angular_Book\\SportsStore\\ServerApp\\ServerApp.csproj",
       "packagesPath": "C:\\Users\\Kepha\\.nuget\\packages\\",
-      "outputPath": "C:\\Learning\\AngularJs\\SportsStore\\ServerApp\\obj\\",
+      "outputPath": "C:\\Learning\\AngularJs\\Essential_Angular_Book\\SportsStore\\ServerApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
