@@ -2,8 +2,11 @@
     <table class="table table-sm table-striped">
         <tbody>
             <tr>
-                <th>Name</th><th>Category</th><th>Price</th>
-                <th>Supplier</th><th>Ratings</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Supplier</th>
+                <th>Ratings</th>
             </tr>
             <tr *ngFor="let product of products">
                 <td>{{product.name}}</td>
@@ -11,7 +14,20 @@
                 <td>{{product.price}}</td>
                 <td>{{product.supplier?.name || 'None'}}</td>
                 <td>{{product.ratings?.length || 0}}</td>
-                </tr>
+            </tr>
         </tbody>
     </table>
-    </div>
+
+    <button class="btn btn-primary m-1" (click)="createProduct()">
+        Create Product
+    </button>
+    <button class="btn btn-primary m-1" (click)="createProductAndSupplier()">
+        Create Product and Supplier
+    </button>
+    <button class="btn btn-primary m-1" (click)="replaceProduct()">
+        Replace Product
+    </button>
+    <button class="btn btn-primary m-1" (click)="replaceSupplier()">
+        Replace Supplier
+    </button>
+</div>
