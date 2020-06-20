@@ -23,13 +23,13 @@ export class Repository {
     }
     getProduct(id: number) {
         this.http.get<Product>(`${productsUrl}/${id}`)
-        .subscribe(p => this.product = p);
+            .subscribe(p => this.product = p);
     }
 
     getProducts() {
         let url = `${productsUrl}?related=${this.filter.related}`;
         if (this.filter.category) {
-            url += `&category=${this.filter.category}`;
+            url +=  `&category=${this.filter.category}`;
         }
         if (this.filter.search) {
             url += `&search=${this.filter.search}`;
@@ -38,11 +38,11 @@ export class Repository {
     }
 
     getSuppliers() {
-        this.http.get<Supplier[]>(suppliersUrl)
-        .subscribe(sups => this.suppliers = sups);
+      this.http.get<Supplier[]>(suppliersUrl)
+          .subscribe(sups => this.suppliers = sups);
     }
 
-    createProduct(prod: Product){
+    createProduct(prod: Product) {
         let data = {
             name: prod.name, category: prod.category,
             description: prod.description, price: prod.price,
@@ -53,22 +53,23 @@ export class Repository {
             .subscribe(id => {
                 prod.productId = id;
                 this.products.push(prod);
-        });
+            });
     }
 
     createProductAndSupplier(prod: Product, supp: Supplier) {
         let data = {
             name: supp.name, city: supp.city, state: supp.state
         };
+
         this.http.post<number>(suppliersUrl, data)
-            .subscribe(id => {
-                supp.supplierId = id;
-                prod.supplier = supp;
-                this.suppliers.push(supp);
-                if (prod != null) {
-                    this.createProduct(prod);
-                }
-            });
+          .subscribe(id => {
+              supp.supplierId = id;
+              prod.supplier = supp;
+              this.suppliers.push(supp);
+              if (prod != null) {
+                  this.createProduct(prod);
+              }
+          });
     }
 
     replaceProduct(prod: Product) {
@@ -87,5 +88,26 @@ export class Repository {
         };
         this.http.put(`${suppliersUrl}/${supp.supplierId}`, data)
             .subscribe(() => this.getProducts());
+    }
+
+    updateProduct(id: number, changes: Map<string, any>) {
+        let patch = [];
+        changes.forEach((value, key) => 
+            patch.push({ op: "replace", path: key, value: value }));
+        this.http.patch(`${productsUrl}/${id}`, patch)
+            .subscribe(() => this.getProducts());
+    }
+
+    deleteProduct(id: number) {
+        this.http.delete(`${productsUrl}/${id}`)
+        .subscribe(() => this.getProducts());
+    }
+
+    deleteSupplier(id: number) {
+        this.http.delete(`${suppliersUrl}/${id}`)
+            .subscribe(() => {
+                this.getProducts();
+                this.getSuppliers();
+            });
     }
 }
