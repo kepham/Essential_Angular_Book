@@ -128,3 +128,4 @@ C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\net
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\libman.json
