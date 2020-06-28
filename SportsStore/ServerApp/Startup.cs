@@ -28,19 +28,35 @@ namespace ServerApp
         public void ConfigureServices(IServiceCollection services)
         {
             string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-                    services.AddDbContext<DataContext>(options =>
-                    options.UseSqlServer(connectionString));
+            services.AddDbContext<DataContext>(options =>
+            options.UseSqlServer(connectionString));
 
             services.AddControllersWithViews()
-                .AddJsonOptions(opts => {
+                .AddJsonOptions(opts =>
+                {
                     opts.JsonSerializerOptions.IgnoreNullValues = true;
                 }).AddNewtonsoftJson();
-                
+
             services.AddRazorPages();
 
-            services.AddSwaggerGen(options => {
+            services.AddSwaggerGen(options =>
+            {
                 options.SwaggerDoc("v1",
                 new OpenApiInfo { Title = "SportsStore API", Version = "v1" });
+            });
+
+            services.AddDistributedSqlServerCache(options =>
+            {
+                options.ConnectionString = connectionString;
+                options.SchemaName = "dbo";
+                options.TableName = "SessionData";
+            });
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = "SportsStore.Session";
+                options.IdleTimeout = System.TimeSpan.FromHours(48);
+                options.Cookie.HttpOnly = false;
+                options.Cookie.IsEssential = true;
             });
         }
 
@@ -60,6 +76,8 @@ namespace ServerApp
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseSession();
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -72,7 +90,7 @@ namespace ServerApp
 
                 endpoints.MapControllerRoute(
                     name: "angular_fallback",
-                    pattern: "{target:regex(store)}/{*catchall}",
+                    pattern: "{target:regex(store|cart|checkout)}/{*catchall}",
                     defaults: new { controller = "Home", action = "Index" });
 
                 endpoints.MapRazorPages();

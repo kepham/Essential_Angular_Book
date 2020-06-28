@@ -129,3 +129,4 @@ C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\net
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\libman.json
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.SqlServer.dll
