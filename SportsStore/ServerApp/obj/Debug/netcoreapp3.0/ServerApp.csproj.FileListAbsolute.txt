@@ -130,3 +130,15 @@ C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\net
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\libman.json
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.SqlServer.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\BlazorApp.blazor.config
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Blazor.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Blazor.Server.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Mono.Cecil.Mdb.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Mono.Cecil.Pdb.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Mono.Cecil.Rocks.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Mono.Cecil.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Mono.WebAssembly.Interop.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\BlazorApp.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\BlazorApp.pdb
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\obj\Debug\netcoreapp3.0\Razor\Views\Home\Blazor.cshtml.g.cs

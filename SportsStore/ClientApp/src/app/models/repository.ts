@@ -37,7 +37,7 @@ export class Repository {
             .subscribe(p => this.product = p);
     }
 
-    getProducts() {
+    getProducts(): Promise<productsMetadata> {
         let url = `${productsUrl}?related=${this.filter.related}`;
         if (this.filter.category) {
             url += `&category=${this.filter.category}`;
@@ -45,14 +45,14 @@ export class Repository {
         if (this.filter.search) {
             url += `&search=${this.filter.search}`;
         }
-        url += '&metadata=true';
-
-        this.http.get<productsMetadata>(url)
-            .subscribe(md => {
+        url += "&metadata=true";
+        return this.http.get<productsMetadata>(url)
+            .toPromise<productsMetadata>()
+            .then(md => {
                 this.products = md.data;
                 this.categories = md.categories;
+                return md;
             });
-
     }
 
     getSuppliers() {
