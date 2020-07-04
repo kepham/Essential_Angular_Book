@@ -14950,6 +14950,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Learning\\AngularJs\\Essential_Angular_Book\\SportsStore\\ServerApp\\Views\\Account\\Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Learning\\AngularJs\\Essential_Angular_Book\\SportsStore\\ServerApp\\Views\\Home\\Blazor.cshtml",
       "TargetPath": "Views\\Home\\Blazor.cshtml",
       "FileKind": "mvc"

@@ -142,3 +142,5 @@ C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\net
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\BlazorApp.dll
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\BlazorApp.pdb
 C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\obj\Debug\netcoreapp3.0\Razor\Views\Home\Blazor.cshtml.g.cs
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Learning\AngularJs\Essential_Angular_Book\SportsStore\ServerApp\obj\Debug\netcoreapp3.0\Razor\Views\Account\Login.cshtml.g.cs

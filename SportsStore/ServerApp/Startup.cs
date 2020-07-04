@@ -15,6 +15,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
+using Microsoft.AspNetCore.Identity;
 
 namespace ServerApp
 {
@@ -33,6 +34,11 @@ namespace ServerApp
             string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
             services.AddDbContext<DataContext>(options =>
             options.UseSqlServer(connectionString));
+
+            services.AddDbContext<IdentityDataContext>(options =>
+            options.UseSqlServer(Configuration["ConnectionStrings:Identity"]));
+            services.AddIdentity<IdentityUser, IdentityRole>()
+            .AddEntityFrameworkStores<IdentityDataContext>();
 
             services.AddControllersWithViews()
                 .AddJsonOptions(opts =>
@@ -96,6 +102,8 @@ namespace ServerApp
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -143,6 +151,7 @@ namespace ServerApp
                 }
             });
             SeedData.SeedDatabase(services.GetRequiredService<DataContext>());
+            IdentitySeedData.SeedDatabase(services).Wait();
         }
     }
 }
